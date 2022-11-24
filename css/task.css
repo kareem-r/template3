@@ -1,0 +1,1275 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*start header*/
+
+.header {
+
+
+
+    background-color: #ffffff;
+
+
+
+}
+
+
+
+
+
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width:376px) {
+    .header .container {
+
+        padding-bottom: 10px;
+
+        margin-top: 25px;
+    }
+}
+
+.header .container .logo i {
+    color: #1290a4;
+}
+
+.header .container .logo span {
+    color: #252525;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header .container .links ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    color: #252525;
+
+}
+
+@media(max-width:376px) {
+    .header .container .links ul {
+        display: none;
+    }
+
+    .header .container .buttons {
+        display: none;
+    }
+
+    .header .container .logo {
+        padding-bottom: 10px;
+    }
+}
+
+.header .container .links ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #1d263a;
+}
+
+.container .links ul li:first-child::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+    font-weight: 900;
+    margin-left: 15px;
+    color: #1d263a;
+
+
+}
+
+.container .links ul li:nth-child(2)::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+    font-weight: 900;
+    margin-left: 15px;
+    color: #1d263a;
+
+}
+
+.container .buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .buttons a {
+    text-decoration: none;
+}
+
+.container .buttons .sign-in {
+    color: #1d263a;
+}
+
+.container .buttons .button {
+    margin-left: 20px;
+    border: 1px solid white;
+    background-color: #1290a4;
+    color: #fffcfc;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/*end header*/
+/*start chat*/
+.chat {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    background-color: #f8f8f8;
+}
+
+@media(max-width:376px) {
+    .chat {
+        width: 1402px;
+    }
+
+}
+
+.chat .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width:376px) {
+    .chat .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+}
+
+.chat .text .text1 {
+    margin-bottom: 40px;
+}
+
+.chat .text .text1 h1 {
+    color: #1f1f1f;
+}
+
+.chat .text .text1 p {
+    color: #222f3f;
+}
+
+#p-input {
+    color: #8ba9d0;
+}
+
+#a-input {
+    text-decoration: none;
+
+    color: #258aff;
+}
+
+.chat .container .text form {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+}
+
+@media(max-width:376px) {}
+
+
+
+.chat .container .text form input[type="email"] {
+    border: 1px solid white;
+    border-right: none;
+    background: #eef4f5;
+    padding: 20px 20px 20px 60px;
+    caret-color: #eef4f5;
+    width: calc(100% - 200px);
+}
+
+.chat .container .text form input[type="submit"] {
+    background-color: #1290a4;
+    color: white;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-left: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat .container form input[type="email"]:focus,
+.chat .text form input[type="submit"]:focus {
+    outline: none;
+}
+
+.chat .container .image {
+    position: relative;
+
+    right: -100px;
+    transition: .3s;
+}
+
+@media(max-width:376px) {
+    .chat .container .image {
+        position: relative;
+        left: 0;
+        padding-bottom: 10px;
+    }
+
+}
+
+.chat .container .image img {
+    animation-name: up-and-down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes up-and-down {
+    to {
+
+        transform: translateY(-20px);
+    }
+}
+
+/*end*/
+.features {
+    background-color: #eef4f5;
+    padding-bottom: 120px;
+}
+
+@media(max-width:376px) {
+    .features {
+        width: 1402px;
+    }
+}
+
+.features .container {
+
+    position: relative;
+    top: -80px;
+
+}
+
+@media(max-width:376px) {
+    .features .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features .container h1 {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.features .container h1 {
+    color: #1f1f1f;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.features .container .card {
+    background-color: #ffffff;
+    padding-top: 20px;
+    height: 290px;
+    width: 500px;
+
+}
+
+.features .container .text {
+    padding-left: 25px;
+}
+
+.features .container .text p {
+    font-weight: normal;
+    font-family: sans-serif;
+    line-height: 2;
+    padding-right: 10px;
+    color: #746d66;
+}
+
+.features .container .card a {
+    padding-left: 25px;
+    color: #4790a4;
+    text-decoration: none;
+}
+
+.features .container .card a::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    font-weight: 900;
+    width: 5px;
+    height: 2px;
+    position: relative;
+    bottom: -2px;
+    color: #4790a4;
+    padding-left: 25px;
+
+}
+
+.features .container .cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+@media(max-width:376PX) {
+    .features .container .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+}
+
+
+
+.features .container .cards .card:first-child i {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #f46f7c;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #fde2e5;
+    border-width: 15px;
+    margin-left: 20px;
+
+}
+
+.features .container .cards .card:nth-child(2) i {
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    color: #f46f7c;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #fde2e5;
+    border-width: 15px;
+    margin-left: 20px;
+
+}
+
+.features .container .cards .card:last-child i {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #f46f7c;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #fde2e5;
+    border-width: 15px;
+    margin-left: 20px;
+}
+
+#svg1 {
+    position: relative;
+    bottom: -210px;
+}
+
+@media(max-width:376px) {
+    svg {
+        position: relative;
+        bottom: -170px;
+    }
+}
+
+/*end*/
+/*start response*/
+.response {
+    padding-top: 120px;
+}
+
+.response .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width:376px) {
+    @media (max-width: 376px) {
+        .response .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            left: 98%;
+        }
+    }
+
+}
+
+.response .container .text h2 {
+    font-weight: bold;
+    font-size: 50px;
+    color: #1f1f1f;
+}
+
+@media(max-width:376px) {
+    .response .container .text h2 {
+        font-weight: bold;
+        font-size: 38px;
+        color: #1f1f1f;
+        padding-top: 14px;
+    }
+}
+
+.response .container .text p {
+    color: #333333;
+    font-weight: normal;
+}
+
+.response .container .text a {
+    text-decoration: none;
+    color: #1290a4;
+}
+
+.response .container .text a::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    font-weight: 900;
+    width: 5px;
+    height: 2px;
+    position: relative;
+    bottom: -2px;
+    color: #4790a4;
+    padding-left: 25px;
+}
+
+/*end*
+/*start miss*/
+.miss {
+    background-color: #f8f8f8;
+    margin-top: 120px;
+    padding-top: 120px;
+}
+
+@media(max-width:376px) {
+    .miss {
+        width: 1402px;
+        margin-top: 120px;
+    }
+}
+
+.miss .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -40px;
+}
+
+@media(max-width:376px) {
+    .miss .container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 29%;
+    }
+}
+
+.miss .container .text h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.miss .container .text #p1 {
+    line-height: 2;
+    color: #333333;
+    font-weight: normal;
+}
+
+.miss .container .text #p2::before {
+
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    font-weight: 900;
+    color: #258aff;
+    padding-right: 10px;
+}
+
+.miss .container .text #p3::before {
+
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    font-weight: 900;
+    color: #258aff;
+    padding-right: 10px;
+}
+
+.miss .container .text #p4::before {
+
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    font-weight: 900;
+    color: #258aff;
+    padding-right: 10px;
+}
+
+#svg {
+    position: relative;
+    top: -200px;
+    z-index: -1;
+
+
+
+}
+
+@media(max-width:376px) {
+    #svg {
+        position: relative;
+        top: -1px;
+        z-index: -1;
+        width: 1402px;
+    }
+}
+
+@media(max-width:376px) {
+    .miss .container .image {
+        padding-bottom: 10px;
+    }
+}
+
+/*end*/
+/*start customer*/
+.customer {
+    position: relative;
+    top: -160px;
+}
+
+@media(max-width:376px) {
+    .customer {
+        position: relative;
+        top: 0;
+    }
+}
+
+.customer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width:376px) {
+    .customer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 98%
+    }
+}
+
+.customer .container .text h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #1f1f1f;
+}
+
+.customer .container .text #pargraph1 {
+    font-weight: normal;
+}
+
+.customer .container .text hr {
+    width: 420px;
+    position: relative;
+    left: -35px;
+}
+
+.customer .container .text #pargraph2 {
+    font-weight: normal;
+    color: #777;
+    padding-bottom: 20px;
+}
+
+.customer .container .text a {
+    background-color: #f46f7c;
+    border: 1px solid transparent;
+    color: #feffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+/*end*/
+/*start pricing*/
+.pricing {
+
+    position: relative;
+    bottom: 119px;
+    background-color: #30393b;
+}
+
+@media(max-width:376px) {
+    .pricing {
+
+        width: 1402px;
+    }
+
+}
+
+@media(max-width:376px) {
+    .image1 {
+        position: relative;
+        top: 17px;
+        width: 1402px;
+    }
+}
+
+.pricing .container {
+
+    padding-bottom: 60px;
+
+}
+
+.pricing .container .text h2 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.pricing .container .text p {
+    color: #878b82;
+    text-align: center;
+    font-weight: normal;
+}
+
+.pricing .container .text #check {
+    border: 1px solid transparent;
+
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    border-radius: 34px;
+
+
+    background-color: white;
+}
+
+.pricing .container .text #monthly {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.pricing .container .text #yearly {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #1290a4;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* .pricing .container .cards  {
+    display: flex;
+    
+    background-color: white;
+    width: fit-content;
+      }*/
+@media(max-width:376px) {
+    .pricing .container .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .pricing .container .card {
+        margin-right: -31px;
+    }
+}
+
+.pricing .container .card {
+    width: fit-content;
+    background-color: white;
+
+    margin-top: 20px;
+    padding: 20px 60px 20px 30px;
+}
+
+.pricing .container .card h3 {
+    font-weight: normal;
+    color: #777;
+    position: relative;
+    left: 0;
+}
+
+.pricing .container .card p {
+    font-weight: normal;
+    color: #777;
+    line-height: 2;
+}
+
+.pricing .container .card span {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.pricing .container .card span::after {
+    content: '/month';
+    font-size: 20px;
+    position: relative;
+    bottom: -10px;
+}
+
+.pricing .container .card span::before {
+    content: '$';
+    font-size: 30px;
+    font-weight: normal;
+    position: relative;
+    top: -20px;
+
+}
+
+.pricing .container ul {
+    position: relative;
+    left: -38px;
+}
+
+.pricing .container ul li {
+    padding: 10px 0;
+    position: relative;
+}
+
+.pricing .container ul li:first-child:before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #1f1f1f;
+    padding-right: 15px;
+
+}
+
+.pricing .container ul li:nth-child(2):before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #1f1f1f;
+    padding-right: 15px;
+
+}
+
+.pricing .container ul li:nth-child(3):before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #777;
+    padding-right: 15px;
+
+}
+
+.pricing .container ul li:nth-child(4):before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #777;
+    padding-right: 15px;
+
+}
+
+s {
+    color: #777;
+}
+
+.pricing .container .card .foot {
+    padding-top: 10px;
+}
+
+.pricing .container .card .foot a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid transparent;
+    background-color: #1290a4;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+/*end card*/
+/*start card*/
+
+.pricing .container .card1 {
+    border-top: 4px solid #f46f7c;
+    margin-left: 32px;
+    margin-top: 20px;
+
+    padding: 20px 60px 20px 34px;
+    width: fit-content;
+    background-color: white;
+}
+
+.pricing .container .card1 h3 {
+    font-weight: normal;
+    color: #777;
+    position: relative;
+    left: 0;
+}
+
+.pricing .container .card1 h3::after {
+    content: 'POPULAR';
+    position: relative;
+    right: -210px;
+    font-weight: normal;
+    font-size: 13px;
+    background-color: #f46f7c;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 38px;
+    padding: 2px 4px;
+
+}
+
+.pricing .container .card1 p {
+    font-weight: normal;
+    color: #777;
+    line-height: 2;
+}
+
+.pricing .container .card1 span {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.pricing .container .card1 span::after {
+    content: '/month';
+    font-size: 20px;
+
+    position: relative;
+    bottom: -10px;
+}
+
+.pricing .container .card1 span::before {
+    content: '$';
+    font-size: 30px;
+    font-weight: normal;
+    position: relative;
+    top: -20px;
+
+}
+
+.pricing .container ul {
+    position: relative;
+    left: -38px;
+}
+
+.pricing .container ul li {
+    padding: 10px 0;
+    position: relative;
+}
+
+.pricing .container ul li:first-child:before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #1f1f1f;
+    padding-right: 15px;
+
+}
+
+.pricing .container ul li:nth-child(2):before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #1f1f1f;
+    padding-right: 15px;
+
+}
+
+.pricing .container ul li:nth-child(3):before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+    color: #1f1f1f;
+    font-weight: 900;
+    padding-right: 15px;
+
+}
+
+.pricing .container ul li:nth-child(4):before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #777;
+    padding-right: 15px;
+
+}
+
+s {
+    color: #777;
+}
+
+.pricing .container .card1 .foot {
+    padding-top: 10px;
+}
+
+.pricing .container .card1 .foot a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid transparent;
+    background-color: #1290a4;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.pricing .container .cards {
+    display: flex;
+}
+
+caption {
+    color: white;
+}
+
+/*end card1*/
+.pricing .container .card2 {
+    width: fit-content;
+    background-color: white;
+    margin-left: 26px;
+    margin-top: 20px;
+    padding: 20px 72px 20px 30px;
+}
+
+.pricing .container .card2 h3 {
+    font-weight: normal;
+    color: #777;
+    position: relative;
+    left: 0;
+}
+
+.pricing .container .card2 p {
+    font-weight: normal;
+    color: #777;
+    line-height: 2;
+}
+
+.pricing .container .card2 span {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.pricing .container .card2 span::after {
+    content: '/month';
+    font-size: 20px;
+    position: relative;
+    bottom: -10px;
+}
+
+.pricing .container .card2 span::before {
+    content: '$';
+    font-size: 30px;
+    font-weight: normal;
+    position: relative;
+    top: -20px;
+
+}
+
+.pricing .container ul {
+    position: relative;
+    left: -38px;
+}
+
+.pricing .container ul li {
+    padding: 10px 0;
+    position: relative;
+}
+
+.pricing .container ul li:first-child:before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #1f1f1f;
+    padding-right: 15px;
+
+}
+
+.pricing .container ul li:nth-child(2):before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #1f1f1f;
+    padding-right: 15px;
+
+}
+
+.pricing .container ul li:nth-child(3):before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #1f1f1f;
+    padding-right: 15px;
+
+}
+
+.pricing .container ul li:nth-child(4):before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+    color: #1f1f1f;
+    padding-right: 15px;
+
+}
+
+s {
+    color: #777;
+}
+
+.pricing .container .card2 .foot {
+    padding-top: 10px;
+}
+
+.pricing .container .card2 .foot a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid transparent;
+    background-color: #1290a4;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+/*end card*/
+.image1 {
+    position: relative;
+    top: 17px;
+}
+.ms{
+    position: relative;
+    bottom: -340px;
+}
+
+/*
+@media(max-width:376px)
+{
+    .ms{@media (max-width: 376px)
+        .ms {
+            width: 1150px;
+            z-index: -1;
+            position: relative;
+            bottom: -245px;
+        }}
+}*/
+/*end*/
+
+@media(max-width:376px)
+{
+    .footer .container{position: relative;
+        left: 87%;
+        width: max-content;}
+}
+
+.footer .container .text{display: block;}
+@media(max-width:376px)
+{
+    .footer .txt{display: flex;
+    flex-direction: column;
+width: max-content;}
+.footer .txt .one{padding-left: 166px;}
+.footer .txt .two{position: relative;
+    left: -96px;}
+    .footer .txt .three{position: relative;
+        left: -71px;}
+        .footer .txt .four{position: relative;
+            left: -69px;}
+}
+.footer .container .text h2
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+.footer .container .text p{line-height: 2;
+text-align: center;}
+
+.footer .container  form input[type="email"] {
+    text-align: center;
+    border: 1px solid white;
+    border-right: none;
+    background: #eef4f5;
+    padding: 20px 20px 20px 60px;
+    caret-color: #eef4f5;
+    width: 300px;
+}
+@media(max-width:376px){
+    .footer .container form input[type="email"]{
+    padding: 20px 20px 20px 21px;
+    caret-color: #eef4f5;
+    width: 377px;}
+    .footer .container form input[type="submit"]{
+        width: 377px;
+    }
+    
+}
+
+.footer .container  form{padding-left: 25%;
+padding-top: 20px;}
+
+.footer .container  form input[type="submit"] {
+    text-align: center;
+    background-color: #1290a4;
+    color: white;
+    padding: 20px 30px;
+    border: 1px solid white;
+    border-left: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .container form input[type="email"]:focus,
+.footer .container form input[type="submit"]:focus {
+    outline: none;
+}
+.footer .container #input{
+    color: #777;
+text-align: center;}
+.footer .container #input::before
+{
+    content: '\f023';
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    color: #777;
+    padding-right: 10px;
+
+}
+.footer .txt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.footer  .txt .one i:first-child{
+    color: #1290a4;
+}
+.footer .txt .one span
+{
+    font-weight: bold;
+}
+.footer .txt .one p{font-weight: normal;
+line-height: 2;}
+
+.footer .txt .two h3,
+.footer .txt .three h3,
+.footer .txt .four h3{
+    color: #777;
+    padding-left: 30px;
+}
+.footer .txt .two ul li,
+.footer .txt .three ul li,
+.footer .txt .four ul li{padding-bottom:20px ;}
